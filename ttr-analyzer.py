@@ -1,5 +1,5 @@
 TTR_DAT = "ttr.dat"
-USE_GRAY = False
+USE_GRAY = True
 COLOR_GRAY = 'gray'
 DEBUG = False
 DEBUG_PAUSE = False
