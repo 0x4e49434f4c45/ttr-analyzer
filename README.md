@@ -6,4 +6,11 @@ No?
 
 Well, this Python script will calculate the answer for you anyway.
 
-`ttr.dat` can be easily modified to calculate the longest route in expansions or sequels to the original game.
+## Usage
+
+`python ttr-analyzer.py [data file]`
+
+Python 3 is required.
+
+Data files are supplied for the original Ticket to Ride game (`ttr.dat`, the default) and for Ticket to Ride: Europe
+(`ttr-europe.dat`). Additional data files can easily be created for other expansions or sequels.
