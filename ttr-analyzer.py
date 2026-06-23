@@ -125,6 +125,6 @@ for startCity in list(cities):
         if DEBUG_PAUSE:
             input('Press ENTER to continue...')
 
-print(f"Longest single-color route is {longestRoute[0].startCity} => {longestRoute[-1].route.getDestination(longestRoute[-1].startCity)} in {longestRoute[-1].color} ({longestLength} cars). Trace:")
+print(f"Longest single-color route is {longestRoute[0].startCity} => {longestRoute[-1].route.getDestination(longestRoute[-1].startCity)} in {longestRoute[-1].previousColor} ({longestLength} cars). Trace:")
 for t in longestRoute:
     print(f"\t{t}")
