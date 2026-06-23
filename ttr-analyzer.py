@@ -1,4 +1,6 @@
-TTR_DAT = "ttr.dat"
+import sys
+
+DEFAULT_TTR_DAT = "ttr.dat"
 USE_GRAY = True
 COLOR_GRAY = 'gray'
 DEBUG = False
@@ -33,7 +35,9 @@ class RouteTrace:
     def __str__(self):
         return f"route: {self.route.toDirectionalString(self.startCity)}, color: {self.color}, previousColor: {self.previousColor}"
     
-with open(TTR_DAT) as ttr_dat_file:
+ttr_dat = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_TTR_DAT
+
+with open(ttr_dat) as ttr_dat_file:
     dat_routes = [l.strip() for l in ttr_dat_file.readlines()]
 
 cities = {}
